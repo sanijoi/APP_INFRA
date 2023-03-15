@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('terrafrom init') {
             steps { 
-                dir ('app_infra/ec2') {
+                dir ('app_infra/s3') {
                 sh "terraform init"
                 }
             }
